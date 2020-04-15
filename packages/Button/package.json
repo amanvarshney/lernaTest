@@ -27,12 +27,26 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "microbundle --jsx",
-    "dev": "microbundle --jsx watch"
+    "dev": "microbundle --jsx watch",
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
   },
   "bugs": {
     "url": "https://github.com/amanvarshney/lernaTest/issues"
   },
   "dependencies": {
     "react": "^16.13.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
   }
 }

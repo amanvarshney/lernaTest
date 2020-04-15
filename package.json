@@ -3,7 +3,14 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.20.2",
-    "microbundle": "^0.11.0"
+    "microbundle": "^0.11.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^25.3.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
   },
   "peerDependencies": {
     "react": "^16.13.1"
