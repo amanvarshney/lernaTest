@@ -1,7 +1,10 @@
 'use strict';
+import React from 'react';
 
-module.exports = button;
-
-function button() {
-    // TODO
+const Button = () => {
+    return(
+        <p>Hello Woeld</p>
+    )
 }
+
+export default Button;

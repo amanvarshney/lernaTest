@@ -25,10 +25,13 @@
   },  
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "microbundle",
-    "dev": "microbundle watch"
+    "build": "microbundle --jsx",
+    "dev": "microbundle --jsx watch"
   },
   "bugs": {
     "url": "https://github.com/amanvarshney/lernaTest/issues"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
   }
 }
