@@ -5,13 +5,16 @@
   "author": "Aman Varshney <aman.varshney@shiksha.com>",
   "homepage": "https://github.com/amanvarshney/lernaTest#readme",
   "license": "MIT",
-  "main": "lib/Button.js",
+  "source": "src/Button.js",          
+  "main": "dist/button.js",           
+  "module": "dist/button.module.js",  
+  "unpkg": "dist/button.umd.js",      
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
@@ -19,9 +22,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amanvarshney/lernaTest.git"
-  },
+  },  
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "bugs": {
     "url": "https://github.com/amanvarshney/lernaTest/issues"
