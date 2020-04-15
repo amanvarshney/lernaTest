@@ -3,7 +3,9 @@ import React from 'react';
 
 const Button = () => {
     return(
-        <p>Hello Woeld</p>
+        <React.Fragment>
+            Hello World
+        </React.Fragment>
     )
 }
 
